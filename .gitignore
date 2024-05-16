@@ -1,0 +1,8 @@
+.env
+.vscode
+.htaccess
+checkout.php
+connect_db.php
+
+vendor
+uploads

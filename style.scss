@@ -1,0 +1,125 @@
+body {
+	font-family: sans-serif, serif;
+}
+
+header {
+	width: 100%;
+	height: 100%;
+	.hero-img {
+		background-image: url("../cars/uploads/car.jpg");
+		background-size: cover;
+		height: 600px;
+		width: 100%;
+		background-position: center;
+		position: relative;
+
+		h1 {
+			position: absolute;
+			color: cornflowerblue;
+			font-size: 80px;
+			height: 100%;
+			width: 100%;
+			font-weight: bold;
+			font-weight: 800;
+			font-size: 130px;
+			// text-transform: uppercase;
+			text-align: center;
+			text-shadow: 9px 9px 21px black;
+			z-index: 1;
+		}
+
+		.search-car {
+			position: absolute;
+			z-index: 1;
+			display: flex;
+			// flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			width: 100%;
+			height: 100%;
+			border: 1px solid cornflowerblue;
+
+			&-boxes {
+				background-color: #6cb4e8;
+				border-radius: 5px;
+				box-shadow: 3px 5px 16px #4a4a4a;
+				width: 400px;
+				display: flex;
+				padding: 3px;
+				justify-content: center;
+
+				align-items: center;
+
+				font-size: 15px;
+				margin-top: 50px;
+
+				input {
+					border: none;
+					background-color: white;
+					border-radius: 5px;
+					width: 98%;
+				}
+
+				input,
+				label {
+					padding: 15px 10px;
+				}
+
+				label {
+					font-weight: bold;
+				}
+			}
+		}
+
+		&::after {
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgb(7 4 31 / 75%);
+			position: absolute;
+			content: "";
+		}
+	}
+}
+
+.car-container {
+	display: flex;
+    justify-content: center;
+	flex-wrap: wrap;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.car {
+	width: 300px;
+	margin: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	position: relative;
+    // background-color: #6cb4e8;
+    box-shadow: 2px 5px 16px rgba(0, 0, 0, 0.704);
+}
+
+.car img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+
+.reservation-form {
+	margin-top: 20px;
+	display: none;
+	position: absolute;
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
